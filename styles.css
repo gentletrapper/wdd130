@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #fdfdfd;
+}
+
+/* Header uses CSS Grid */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  background: #125D98;
+  padding: 10px 20px;
+  column-gap: 20px;
+}
+
+header .logo {
+  height: 60px;
+}
+
+/* Nav uses Flex for horizontal layout */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+nav a.active {
+  border-bottom: 2px solid #F4A261;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.history, .adventure-gallery {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.adventure-gallery .gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery figure {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Footer uses flexbox with space-between */
+footer {
+  background: #125D98;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Social icons horizontal and aligned right */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  height: 24px;
+  display: block;
+}
